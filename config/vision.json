@@ -1,0 +1,16 @@
+{
+    "color_fail": "red",
+    "enable_edit": true,
+    "enable_serial": false,
+    "preview_size": [
+        100,
+        100
+    ],
+    "selected_camera": "Camera1",
+    "selected_flow": "Flow2",
+    "source": [
+        "Camera1"
+    ],
+    "startup": "product",
+    "zoom": "fit"
+}

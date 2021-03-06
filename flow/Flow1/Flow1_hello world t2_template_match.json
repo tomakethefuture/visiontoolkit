@@ -1,0 +1,11 @@
+{
+    "i_type": "file",
+    "i_type_name": "a.png",
+    "min": 0,
+    "o_crop": 0,
+    "o_gray": 0,
+    "o_ori": 0,
+    "o_score": 0,
+    "o_xy": 0,
+    "source": "Camera1"
+}

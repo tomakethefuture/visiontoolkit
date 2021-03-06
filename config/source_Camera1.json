@@ -1,0 +1,12 @@
+{
+    "camera": "0",
+    "camera_V4L2_format": "MJPG",
+    "camera_directshow": true,
+    "camera_exposure": null,
+    "camera_focus": null,
+    "camera_framerate": null,
+    "camera_resolution_height": 1080,
+    "camera_resolution_width": 1920,
+    "camera_type": "usb",
+    "source_type": "camera"
+}
