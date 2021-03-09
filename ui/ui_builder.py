@@ -5,9 +5,10 @@ This is home page of the vision toolkit 5
 """
 from dearpygui.core import *
 from dearpygui.simple import *
-from pyautogui import size
-from ui.windows import Windows
+from ui.ribbon import Ribbon
 from ui.menu import Menu
+from ui.output import Output
+from ui.workspace import Workspace
 
 class UiBuilder:
 
@@ -40,10 +41,17 @@ class UiBuilder:
         set_main_window_size(width=width, height=height)
         set_main_window_pos(0, 0)
     
+        # pop the main window
         with window('Main window', height=height, width=width, x_pos=0, y_pos=0, no_title_bar=True, autosize=False, no_move=True, no_collapse=True):
+        
+            # pop the menu and its item
             Menu.generate()
-        
-        
+
+            Ribbon.generate()
+
+            Output.generate()
+
+            Workspace.generate()
 
     def run_gui(self) -> None:
         """initiate main ui

@@ -5,12 +5,14 @@ Module to build the window
 """
 from dearpygui.core import *
 from dearpygui.simple import *
+from ui.ribbon_tab import RibbonTab
 
-class Windows:
+class Ribbon:
     """
     Window building module
     """
 
     @staticmethod
-    def generate_window(window_name:str):
-        add_about_window('sample')
+    def generate():
+        with child('tab', height=150):
+            RibbonTab.generate()
