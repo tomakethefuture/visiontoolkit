@@ -4,7 +4,7 @@ python 3.7.9
 Main workspace
 """
 
-from dearpygui.core import add_text, set_style_touch_extra_padding
+from dearpygui.core import add_text
 from dearpygui.simple import child
 
 class Workspace:
@@ -13,9 +13,8 @@ class Workspace:
     """
 
     @staticmethod
-    def generate():
+    def generate() -> None:
         """generate workspace
         """
-        set_style_touch_extra_padding(100, 100)
-        with child('Main Workspace'):
+        with child('Main Workspace', no_scrollbar=True):
             add_text('workspace')

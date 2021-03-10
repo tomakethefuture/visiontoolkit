@@ -12,7 +12,7 @@ class RibbonButton:
     """
 
     @staticmethod
-    def generate():
+    def generate() -> None:
         """pop the buttons
         """
         add_button('FREAK')

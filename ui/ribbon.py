@@ -13,6 +13,7 @@ class Ribbon:
     """
 
     @staticmethod
-    def generate():
-        with child('tab', height=150):
+    def generate(height:int) -> None:
+        with child('tab'):
+            set_item_height('tab', int(0.10*height))
             RibbonTab.generate()

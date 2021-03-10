@@ -42,16 +42,20 @@ class UiBuilder:
         set_main_window_pos(0, 0)
     
         # pop the main window
-        with window('Main window', height=height, width=width, x_pos=0, y_pos=0, no_title_bar=True, autosize=False, no_move=True, no_collapse=True):
-        
+        with window('Main window', height=height-100, width=width, x_pos=0, y_pos=0, \
+            no_title_bar=True, autosize=False, no_move=True, no_collapse=True, \
+                no_scrollbar=True, no_resize=True):
+            main_width = get_item_width('Main window')
+
             # pop the menu and its item
             Menu.generate()
 
-            Ribbon.generate()
+            Ribbon.generate(main_width)
 
-            Output.generate()
-
+            Output.generate(main_width)
+            add_same_line()
             Workspace.generate()
+
 
     def run_gui(self) -> None:
         """initiate main ui
