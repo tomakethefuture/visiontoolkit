@@ -1,8 +1,12 @@
+acapture==1.2.6
 astroid==2.5.1
 colorama==0.4.4
+configparser==5.0.2
 cycler==0.10.0
 dearpygui==0.6.234
 decorator==4.4.2
+easydict==1.9
+ffmpeg==1.4
 imageio==2.9.0
 isort==5.7.0
 kiwisolver==1.3.1
@@ -10,11 +14,12 @@ lazy-object-proxy==1.5.2
 matplotlib==3.3.4
 mccabe==0.6.1
 MouseInfo==0.1.3
+mss==6.1.0
 networkx==2.5
 numpy==1.20.1
 opencv-python==4.5.1.48
 Pillow==8.1.2
-PyAutoGUI==0.9.52
+pygame==2.0.1
 PyGetWindow==0.0.9
 pylint==2.7.2
 PyMsgBox==1.0.9
