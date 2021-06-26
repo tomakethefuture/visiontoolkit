@@ -1,8 +1,6 @@
 # visiontoolkit
-opensource industrial framework: computer vision module
+Opensource Vision Inspection Toolkits
 
-Initiated By Fortune Machine Computer and Imagine AI Sdn Bhd
+Initiated By Fortune Machine Computer
 Credit 
 Chong Yoe Yat
-Lim Kah Seng
-Edwin
